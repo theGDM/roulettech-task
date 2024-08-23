@@ -13,7 +13,7 @@ const Dashboard = () => {
     const [recipeDataOriginal, setRecipeDataOriginal] = useState([]);
     const [filteredRecipeData, setFilteredRecipeData] = useState([]);
 
-    useEffect(async () => {
+    useEffect(() => {
         const fetchData = async () => {
             const response = await getAllRecipes(); // Replace with your API URL
             setRecipeDataOriginal(response.data);
@@ -23,12 +23,13 @@ const Dashboard = () => {
         fetchData();
     }, []);
 
-    useEffect(async () => {
+    useEffect(() => {
+        console.log(searchData.recipe_name)
         const filtered = recipeDataOriginal.filter(recipe =>
             recipe.name.toLowerCase().includes(searchData.recipe_name?.toLowerCase())
         );
         setFilteredRecipeData(filtered);
-    }, [searchData]);
+    }, [searchData.recipe_name]);
 
     return (
         <Box display='flex' flexDirection='column' p='2rem'>

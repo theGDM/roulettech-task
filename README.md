@@ -1,6 +1,6 @@
 ## **Website View :**
 ![Screenshot 2024-08-23 212552](https://github.com/user-attachments/assets/0f61fab3-f4c6-46fe-8015-7ae02b32c3b0)
-
+![Screenshot 2024-08-23 212630](https://github.com/user-attachments/assets/357513e0-d6b9-4bd2-a0d6-c720ef961384)
 
 
 ## **Tech Used :**

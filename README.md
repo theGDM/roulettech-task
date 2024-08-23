@@ -44,4 +44,4 @@
 ## **Steps to Run the Application (Production):**
 
 1. The application is deployed on the AWS Amplify.
-    - > https://main.d2fbbg6q705lby.amplifyapp.com/
+    - > https://main.d17ag1j6ww1wua.amplifyapp.com/

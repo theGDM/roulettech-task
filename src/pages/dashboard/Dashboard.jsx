@@ -24,7 +24,6 @@ const Dashboard = () => {
     }, []);
 
     useEffect(() => {
-        console.log(searchData.recipe_name)
         const filtered = recipeDataOriginal.filter(recipe =>
             recipe.name.toLowerCase().includes(searchData.recipe_name?.toLowerCase())
         );

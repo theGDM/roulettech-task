@@ -3,7 +3,6 @@ const initialState = {
 }
 
 const searchReducer = (state = initialState, action) => {
-    console.log(action.data);
     switch (action.type) {
         case 'SET_RECIPE_NAME':
             return {

@@ -29,7 +29,7 @@
 1. Firstly fork the given repo.
 2. Create a folder named ‘roulettech-task-gyandeep’ in Visual Studio.
 3. Clone the github repo to the respective ‘roulettech-task-gyandeep’ folder, using the command.
-   - `$git clone https://github.com/YOUR-USERNAME/resume-generator.git`
+   - `$git clone https://github.com/theGDM/roulettech-task.git`
 4. Now go to the ‘roulettech-task-gyandeep’ directory.
 5. Now open the terminal and run the command `npm install` in the same directory, so
     It will install all the dependencies and the modules.

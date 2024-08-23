@@ -6,7 +6,7 @@
 ## **Tech Used :**
 **Frontend:** `React.js` `CSS` `Redux` `Material UI`
 
-**Backend:** `Node.js` `Express.js` 
+**Backend:** `Node.js` `Express.js` (I currently have no experience with Python or Django, but as a quick learner, I am confident that I can master these skills in a short amount of time.) 
 
 **Database:** `MongoDB (NoSQL)`
 

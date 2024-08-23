@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+## **Website View :**
+![Screenshot 2024-08-07 000231](https://github.com/user-attachments/assets/a018d675-35f5-48e9-a09a-002a0e7d98a4)
+![Screenshot 2024-08-07 000254](https://github.com/user-attachments/assets/bbd08b61-1455-44db-97e4-d84228fe919b)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## **Tech Used :**
+**Frontend:** `React.js` `CSS` `Redux` `Material UI`
 
-In the project directory, you can run:
+**Backend:** `Node.js` `Express.js` 
 
-### `npm start`
+**Database:** `MongoDB (NoSQL)`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Hosted Platforms:** `AWS Amplify (Frontend)` `Render.com (Backend)` `Github (Code)`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**IDE:** `Visual Studio Code`
 
-### `npm test`
+## **Task Requirements :**
+- Used Node.js with Express for building the backend of the application. ✅
+- Created RESTful API to handle CRUD (Create, Read, Delete, update) operations for recipes. ✅
+- Implemented routes for creating, updating, and deleting recipes, as well as for retrieving all recipes. ✅
+- Used NoSQL (MongoDB) database to store resume data and user information. ✅
+- Set up the necessary data models to represent recipes. ✅
+- Properly handled errors, including sending appropriate error messages and status codes in response. ✅
+- Implemented server-side validation to ensure that task data is valid before saving it to the database. ✅
+- Used Git to track changes in the code. ✅
+- Intuitive Insterface and responsive UI. ✅
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## **Steps to Run the Application (Locally):**
+1. Firstly fork the given repo.
+2. Create a folder named ‘roulettech-task-gyandeep’ in Visual Studio.
+3. Clone the github repo to the respective ‘roulettech-task-gyandeep’ folder, using the command.
+   - `$git clone https://github.com/YOUR-USERNAME/resume-generator.git`
+4. Now go to the ‘roulettech-task-gyandeep’ directory.
+5. Now open the terminal and run the command `npm install` in the same directory, so
+    It will install all the dependencies and the modules.
+6. Now run the react app using the command `npm start`.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**`Github Link Frontend UI:`** https://github.com/theGDM/roulettech-task
+</br>
+**`Github Link Backend-Service:`** https://github.com/theGDM/roulettech-service
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## **Steps to Run the Application (Production):**
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. The application is deployed on the AWS Amplify.
+    - > https://main.d2fbbg6q705lby.amplifyapp.com/

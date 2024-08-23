@@ -1,9 +1,18 @@
 import { Box, Typography } from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
 import RecipeCard from '../../components/RecipeCard'
 import { recipeData } from '../../data/recipeData'
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchRecipesData } from '../../actions/recipeAction';
 
 const Dashboard = () => {
+    const dispatch = useDispatch();
+    let recipeFetchData = useSelector((state) => state.recipes);
+
+    useEffect(() => {
+        dispatch(fetchRecipesData());
+    }, []);
+
     return (
         <Box display='flex' flexDirection='column' p='2rem'>
             <Box display='flex'
@@ -34,7 +43,7 @@ const Dashboard = () => {
                 mt='2rem'
             >
                 {
-                    recipeData.length != 0 ? recipeData.map((recipe, index) => {
+                    recipeFetchData?.recipes.length != 0 ? recipeFetchData?.recipes.map((recipe, index) => {
                         return <RecipeCard key={index} RecipeDetails={recipe} />
                     }) :
                         <Box

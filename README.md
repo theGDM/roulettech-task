@@ -2,6 +2,10 @@
 ![Screenshot 2024-08-23 212552](https://github.com/user-attachments/assets/0f61fab3-f4c6-46fe-8015-7ae02b32c3b0)
 ![Screenshot 2024-08-23 212630](https://github.com/user-attachments/assets/357513e0-d6b9-4bd2-a0d6-c720ef961384)
 
+## **Description :**
+I developed a comprehensive recipe website where users can explore a variety of recipes, view details about each recipe, including the author, ingredients, and preparation methods. The recipes are presented in an engaging card format for easy browsing.
+
+The website is built using React.j, Material UI, for dynamic user interfaces, Node.js and Express.js for server-side functionality, and MongoDB for scalable data storage. This combination ensures a seamless user experience and efficient data management.
 
 ## **Tech Used :**
 **Frontend:** `React.js` `CSS` `Redux` `Material UI`
@@ -39,9 +43,3 @@
 **`Github Link Frontend UI:`** https://github.com/theGDM/roulettech-task
 </br>
 **`Github Link Backend-Service:`** https://github.com/theGDM/roulettech-service
-
-
-## **Steps to Run the Application (Production):**
-
-1. The application is deployed on the AWS Amplify.
-    - > https://main.d17ag1j6ww1wua.amplifyapp.com/

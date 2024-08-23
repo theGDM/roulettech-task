@@ -4,16 +4,31 @@ import RecipeCard from '../../components/RecipeCard'
 import { recipeData } from '../../data/recipeData'
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchRecipesData } from '../../actions/recipeAction';
+import { getAllRecipes } from '../../services/api';
 
 const Dashboard = () => {
     const dispatch = useDispatch();
     let recipeFetchData = useSelector((state) => state.recipes);
+    let searchData = useSelector((state) => state.search);
     const [recipeDataOriginal, setRecipeDataOriginal] = useState([]);
     const [filteredRecipeData, setFilteredRecipeData] = useState([]);
 
-    useEffect(() => {
-        dispatch(fetchRecipesData());
+    useEffect(async () => {
+        const fetchData = async () => {
+            const response = await getAllRecipes(); // Replace with your API URL
+            setRecipeDataOriginal(response.data);
+            setFilteredRecipeData(response.data);
+        };
+
+        fetchData();
     }, []);
+
+    useEffect(async () => {
+        const filtered = recipeDataOriginal.filter(recipe =>
+            recipe.name.toLowerCase().includes(searchData.recipe_name?.toLowerCase())
+        );
+        setFilteredRecipeData(filtered);
+    }, [searchData]);
 
     return (
         <Box display='flex' flexDirection='column' p='2rem'>
@@ -45,7 +60,7 @@ const Dashboard = () => {
                 mt='2rem'
             >
                 {
-                    recipeFetchData?.recipes.length != 0 ? recipeFetchData?.recipes.map((recipe, index) => {
+                    filteredRecipeData.length != 0 ? filteredRecipeData.map((recipe, index) => {
                         return <RecipeCard key={index} RecipeDetails={recipe} />
                     }) :
                         <Box
